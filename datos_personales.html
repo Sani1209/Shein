@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+ <style>
+       
+        #fotoSeleccionada {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<body background="fondobeige.jpg">
+    <body topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 bgcolor="ffffff">
+<table width=100% bgcolor= #FFFFFF><tr><td align= "center">
+<b><i><font size=7>Ingresa tus datos personales</font></i></b>
+</td></tr></table>
+<br>
+<br>
+<br>
+    <form>
+<p align="center">
+<form action="Mailto:hosannaM12@gmail.com" method="post" enctype="text/plain">
+
+      <input type="file" accept="image/*" onchange="mostrarFoto(event)">
+    <img id="fotoSeleccionada" src="#" alt="Foto seleccionada" style="display:none;"><br><br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password"><br><br>
+<input type="radio" name="sexo" value="Varon" checked> Hombre
+<br>
+<input type="radio" name="sexo" value="Hembra"> Mujer
+<br>
+<br>   
+        <!-- Otros campos de datos personales -->
+        <input type="submit" value="Enviar">
+<input type="Reset" value="Borrar datos introducidos">
+    </form>
+   <p align="center">
+        <img id="fotoSeleccionada" src="#" alt="Foto seleccionada" style="display:none;">
+    </p>
+    <p align="center">
+</br>
+</p>
+<p aling="center"><a href="indexx.html"</p><img src="flechita.jpg" width="50" height="50"></a>
+<script>
+        function mostrarFoto(event) {
+            var imagen = document.getElementById('fotoSeleccionada');
+            imagen.src = URL.createObjectURL(event.target.files[0]);
+            imagen.style.display = 'block';
+        }
+      
+        document.getElementById('foto').addEventListener('change', mostrarFoto);
+    </script>
+</body>
+</html>

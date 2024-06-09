@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Shein</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        .product-description {
+            max-width: 400px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+#cart {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        #cart ul {
+            padding: 0;
+        }
+        #cart li {
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+   .custom-button {
+        background-color: White; 
+        border: none;
+        color: black;
+        padding: 5px 10px; 
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .custom-button:hover {
+        background-color: #E5D3CB;
+    }
+.contenedor-boton {
+
+    text-align: center;
+
+}
+
+
+.boton {
+background-color: white;  
+color: black;
+border: 2px solid transparent;
+padding: 10px 20px;
+border-radius: 5px;  
+cursor: pointer;
+font-size: 16px;
+text-decoration: none;
+margin: 0 10px;
+
+}
+.boton:hover {
+ border-color: #BF8863;
+}
+.seleccionado {
+        border: 2px solid #BF8863;
+    }
+    </style>
+</head>
+<body>
+<body background="fondobeige.jpg">
+    <header>
+        <i><h1>Shein</h1></i>
+      <nav>
+    <ul>
+        <li><button class="custom-button" onclick="window.location.href='#inicio'">Inicio</button></li>
+        <li><button class="custom-button" onclick="window.location.href='#hombres'">Hombres</button></li>
+        <li><button class="custom-button" onclick="window.location.href='#damas'">Damas</button></li>
+        <li><button class="custom-button" onclick="window.location.href='#niños'">Niños</button></li>
+        <li><button class="custom-button" onclick="window.location.href='#mas-vendidos'">Más Vendidos</button></li>
+        <li><button class="custom-button" onclick="window.location.href='#contacto'">Contacto</button></li>
+        <li><button class="custom-button" onclick="window.location.href='datos_personales.html'">Mi Perfil</button></li>
+    </ul>
+</nav>
+    </header>
+
+    <div class="container" id="inicio">
+        <h2>Inicio</h2>
+        <b><p align="center">Bienvenidos a Shein donde <i>"Todos tienen derecho a disfrutar de la belleza de la moda"</i></p></b>
+        <!-- Contenido de la página de inicio -->
+    </div>
+<div align="center">
+    <ul>
+   <a href="Ofertas.html" class="boton">Ofertas</a>
+   <a href="accesorios.html" class="boton">Accesorios</a>
+   <a href="mas valoradas.html" class="boton">Mejor valorados</a>
+   <a href="zapatos.html" class="boton">Zapatos</a>
+</ul>
+</div>
+    <div class="container" id="hombres">
+        <h2>Productos para Hombres</h2>
+        
+        <div class="product">
+            <img src="negra.jpeg" alt="Producto 1" width="300" height="310">
+            <div class="product-description">
+                <h3>Camisa negra</h3>
+                <p>Manfinity Homme Camisa De Botones Con Caída De Hombro Para Hombres.</p>
+             <font color="red"><p>Precio: $232.78</p></font>
+<button class="add-to-cart" data-product-id="1">Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="roja.jpeg" alt="Producto 2" width="300" height="310">
+            <div class="product-description">
+                <h3>Sudadera roja</h3>
+                <p>Street Life Chaqueta De Béisbol Para Hombres Con Estampado De Letras Y Parches.</p>
+                <font color="red"><p>Precio: $897.00</p></font>
+<button class="add-to-cart" data-product-id="2">Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="bei.jpeg" alt="Producto 3">
+            <div class="product-description">
+                <h3>Camiseta Beige</h3>
+                <p>Hombres Camiseta de hombros caídos con estampado de slogan.</p>
+            <font color="red"><p>Precio: $181.00</p></font>
+<button class="add-to-cart" data-product-id="3">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="damas">
+        <h2>Productos para Damas</h2>
+        
+        <div class="product">
+            <img src="top blanco.jpeg" alt="Producto 1">
+            <div class="product-description">
+                <h3>Top blanco</h3>
+                <p>SHEIN MOD Camiseta Blanca De Verano Con Recorte De Lechuga En La Parte Superior Del Cam.</p>
+                <font color="red"><p>Precio: $120.50</p></font>
+<button class="add-to-cart" data-product-id="4">Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="vestido azul.jpeg" alt="Producto 2">
+            <div class="product-description">
+                <h3>Vestido Azul</h3>
+                <p>SHEIN MOD Vestido Ajustado De Punto Con Cuello Halter Y Corte Slim Para Mujer.</p>
+                <font color="red"><p>Precio: $364.78</p></font>
+<button class="add-to-cart" data-product-id="5">Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="azul.jpeg" alt="Producto 3">
+            <div class="product-description">
+                <h3>Top azul marino</h3>
+                <p>SHEIN MOD Top Corto Acampanado Bodycon De Verano, Con Cuello Cuadrado Y Detalle Fruncido.</p>
+                <font color="red"><p>Precio: $230.99</p></font>
+<button class="add-to-cart" data-product-id="6">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="niños">
+        <h2>Productos para Niños</h2>
+        
+        <div class="product">
+            <img src="dino.jpeg" alt="Producto 1">
+            <div class="product-description">
+                <h3>Conjunto de dino</h3>
+                <p>SHEIN Camiseta Con Dinosaurio De Dibujos Animados Para Niño Joven Con Pantalones Cortos Deportivos .</p>
+                <font color="red"><p>Precio: $265.45</p></font>
+<button class="add-to-cart" data-product-id="7">Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="cafe.jpeg" alt="Producto 2">
+            <div class="product-description">
+                <h3>Vestido cafe</h3>
+                <p>SHEIN Vestido De Niñas Pequeñas Con Detalles De Smocking Y Banda Elástica Con Ojal Y Volantes.</p>
+                <font color="red"><p>Precio: $248.99</p></font>
+<button class="add-to-cart" data-product-id="8">Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="control.jpeg" alt="Producto 3">
+            <div class="product-description">
+                <h3>Producto 3 para niños</h3>
+                <p>SHEIN Niños, Playera Con Diseño De Letras Y Dibujo De Control De Videojuego & Pantalón Corto Con Cintura Ajustable Con Estambre </p>
+                <font color="red"><p>Precio: $253.77</p></font>
+<button class="add-to-cart" data-product-id="9">Añadir al carrito</button>
+            </div>
+            </div>
+    </div>
+
+    <div class="container" id="mas-vendidos">
+        <h2>Más Vendidos</h2>
+        <!-- Contenido de la sección de productos más vendidos -->
+<div class="product">
+            <img src="rojizo.jpeg" alt="Producto vs">
+            <div class="product-description">
+                <h3>Vestido Rojo</h3>
+                <p>SHEIN MOD Vestido De Mangas Abullonadas Con Cuello Cuadrado Y Lazo Lateral Para Mujeres.</p>
+                <font color="red"><p>Precio: $562.00</p></font>
+<button class="add-to-cart" data-product-id="10">Añadir al carrito</button>
+            </div>
+</div>
+ <div class="product">
+            <img src="negro.jpeg" alt="Producto vs">
+            <div class="product-description">
+                <h3>Playera negra</h3>
+                <p>Manfinity EMRG Hombres Camiseta Con Estampado De Figura Y Letra.</p>
+                <font color="red"><p>Precio: $120.00</p></font>
+<button class="add-to-cart" data-product-id="11">Añadir al carrito</button>
+            </div>
+        </div>
+<div class="product">
+            <img src="rosa.jpeg" alt="Producto vs">
+            <div class="product-description">
+                <h3>Conjunto rosa</h3>
+                <p>Camiseta Gráfica De Letra Y Falda Plisada Para Niña Adolescente.</p>
+                <font color="red"><p>Precio: $246.00</p></font>
+<button class="add-to-cart" data-product-id="12">Añadir al carrito</button>
+    </div>
+</div>
+</div>
+ <!-- JavaScript -->
+       <script>
+var botonesCarrito = document.querySelectorAll('.add-to-cart');
+    botonesCarrito.forEach(function(boton) {
+        boton.addEventListener('click', function() {
+            this.classList.toggle('seleccionado');
+   });
+    });
+    function addToCart(productId) {
+        const productName = document.querySelector(`[data-product-id="${productId}"]`).previousElementSibling.textContent;
+        const cartItem = document.createElement('li');
+        cartItem.textContent = productName;
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Eliminar';
+        deleteButton.classList.add('delete-button');
+        deleteButton.addEventListener('click', function() {
+            cartItem.remove(); 
+        });
+        cartItem.appendChild(deleteButton);
+        document.getElementById('cart-items').appendChild(cartItem);
+    }
+
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const productId = button.getAttribute('data-product-id');
+            addToCart(productId);
+        });
+    });
+</script>
+     <div class="container" id="contacto">
+        <h2>Contacto</h2>
+
+      <center>
+    <h3>para mas informacion consulte a info_shein@gmail.com :)</h3>
+<h4>Numero telefonico +52 899 566 2134</h4>
+<p aling="center"><a href="https://www.facebook.com/SHEINMexico/?locale=es_LA"</p>
+<img src="face.jpg" width="30" height="30"></a>
+<p>Pagina de facebook</p>
+</center>
+<div id="cart">
+    <h2>Carrito de compras</h2>
+    <ul id="cart-items">
+        <!-- Los elementos del carrito se agregarán aquí dinámicamente mediante JavaScript -->
+    </ul>
+</div>
+
+</body>
+</html>
