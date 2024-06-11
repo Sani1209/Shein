@@ -128,9 +128,28 @@ margin: 0 10px;
 .seleccionado {
         border: 2px solid #BF8863;
     }
+        #cookieConsent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 20px;
+            color: #fff;
+            text-align: center;
+            z-index: 9999;
+        }
+        #cookieConsent button {
+            margin: 0 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
+<div id="cookieConsent">
+    Este sitio web utiliza cookies. <button onclick="acceptCookies()">Aceptar</button> <button onclick="rejectCookies()">Rechazar</button>
+</div>
 <body background="fondobeige.jpg">
     <header>
         <i><h1>Shein</h1></i>
@@ -323,6 +342,16 @@ var botonesCarrito = document.querySelectorAll('.add-to-cart');
             addToCart(productId);
         });
     });
+  function acceptCookies() {
+        document.getElementById('cookieConsent').style.display = 'none';
+    }
+
+    function rejectCookies() {
+        document.getElementById('cookieConsent').style.display = 'none';
+    }
+
+    window.onload = function() {
+    };
 </script>
      <div class="container" id="contacto">
         <h2>Contacto</h2>
