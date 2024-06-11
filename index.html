@@ -128,16 +128,27 @@ margin: 0 10px;
 .seleccionado {
         border: 2px solid #BF8863;
     }
-         function acceptCookies() {
-        document.getElementById('cookieConsent').style.display = 'none';
-    }
-
-    function rejectCookies() {
-        document.getElementById('cookieConsent').style.display = 'none';
-    }
-
-    window.onload = function() {
-    };
+         #cookieConsent {
+            display: none;
+            position: fixed;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            max-width: 400px; 
+            background-color: #333;
+            padding: 10px 20px;
+            color: #fff;
+            text-align: center;
+            z-index: 9999;
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        #cookieConsent button {
+            margin: 0 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
