@@ -150,6 +150,27 @@ margin: 0 10px;
             cursor: pointer;
         }
     </style>
+    <script>
+    function acceptCookies() {
+        document.getElementById('cookieConsent').style.display = 'none';
+        // Aquí podrías agregar tu código para manejar la aceptación de cookies, como establecer una cookie para recordar la elección del usuario.
+    }
+
+    function rejectCookies() {
+        document.getElementById('cookieConsent').style.display = 'none';
+        // Aquí podrías agregar tu código para manejar el rechazo de cookies, como no establecer ninguna cookie o eliminar las cookies existentes.
+    }
+
+    // Función para mostrar la ventana emergente al cargar la página
+    function showCookieConsent() {
+        document.getElementById('cookieConsent').style.display = 'block';
+    }
+
+    // Llama a la función para mostrar la ventana emergente cuando se carga la página
+    window.onload = function() {
+        showCookieConsent();
+    };
+</script>
 </head>
 <body>
 <div id="cookieConsent">
@@ -347,20 +368,6 @@ var botonesCarrito = document.querySelectorAll('.add-to-cart');
             addToCart(productId);
         });
     });
-    function acceptCookies() {
-        document.getElementById('cookieConsent').style.display = 'none';
-    }
-
-    function rejectCookies() {
-        document.getElementById('cookieConsent').style.display = 'none';
-    }
-  function showCookieConsent() {
-        document.getElementById('cookieConsent').style.display = 'block';
-    }
-
-    window.onload = function() {
-        showCookieConsent();
-    };
 </script>
      <div class="container" id="contacto">
         <h2>Contacto</h2>
