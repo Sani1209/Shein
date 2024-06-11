@@ -343,8 +343,12 @@ var botonesCarrito = document.querySelectorAll('.add-to-cart');
     function rejectCookies() {
         document.getElementById('cookieConsent').style.display = 'none';
     }
+  function showCookieConsent() {
+        document.getElementById('cookieConsent').style.display = 'block';
+    }
 
     window.onload = function() {
+        showCookieConsent();
     };
 </script>
      <div class="container" id="contacto">
