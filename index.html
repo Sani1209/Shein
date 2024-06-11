@@ -144,30 +144,32 @@ margin: 0 10px;
             border-radius: 10px; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
-        #cookieConsent button {
-            margin: 0 10px;
-            padding: 5px 10px;
-            cursor: pointer;
-            border: 1px solid #ffffff;
-        }
+       #cookieConsent p {
+    margin-bottom: 10px; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+
+.button-container button {
+    margin: 0 5px; 
+    padding: 10px 20px; 
+    cursor: pointer;
+}
     </style>
     <script>
     function acceptCookies() {
         document.getElementById('cookieConsent').style.display = 'none';
-        // Aquí podrías agregar tu código para manejar la aceptación de cookies, como establecer una cookie para recordar la elección del usuario.
     }
 
     function rejectCookies() {
         document.getElementById('cookieConsent').style.display = 'none';
-        // Aquí podrías agregar tu código para manejar el rechazo de cookies, como no establecer ninguna cookie o eliminar las cookies existentes.
     }
-
-    // Función para mostrar la ventana emergente al cargar la página
     function showCookieConsent() {
         document.getElementById('cookieConsent').style.display = 'block';
     }
 
-    // Llama a la función para mostrar la ventana emergente cuando se carga la página
     window.onload = function() {
         showCookieConsent();
     };
@@ -175,7 +177,11 @@ margin: 0 10px;
 </head>
 <body>
 <div id="cookieConsent">
-    Este sitio web utiliza cookies. <button onclick="acceptCookies()">Aceptar</button> <button onclick="rejectCookies()">Rechazar</button>
+    <p>Este sitio web utiliza cookies.</p>
+    <div class="button-container">
+        <button onclick="acceptCookies()">Aceptar</button>
+        <button onclick="rejectCookies()">Rechazar</button>
+    </div>
 </div>
 <body background="fondobeige.jpg">
     <header>
